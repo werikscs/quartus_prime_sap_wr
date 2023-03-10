@@ -1,0 +1,20 @@
+|ci_74LS173A
+Q0 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+clear => inst31.IN0
+clock => inst5.CLK
+clock => inst9.CLK
+clock => inst18.CLK
+clock => inst25.CLK
+IE1 => inst.IN0
+IE2 => inst.IN1
+D0 => inst1.IN1
+OE1 => inst30.IN0
+OE2 => inst30.IN1
+Q1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst4.IN1
+Q2 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst15.IN1
+Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst22.IN1
+
+

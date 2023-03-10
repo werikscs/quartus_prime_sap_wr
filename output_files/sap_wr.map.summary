@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Mar 10 19:02:22 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : sap_wr
+Top-level Entity Name : ci_74LS173A
+Family : MAX 10
+Total logic elements : 9
+    Total combinational functions : 5
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0
