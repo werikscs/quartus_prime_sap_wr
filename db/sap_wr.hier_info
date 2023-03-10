@@ -1,20 +1,25 @@
-|ci_74LS173A
-Q0 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-clear => inst31.IN0
-clock => inst5.CLK
-clock => inst9.CLK
-clock => inst18.CLK
-clock => inst25.CLK
-IE1 => inst.IN0
-IE2 => inst.IN1
-D0 => inst1.IN1
-OE1 => inst30.IN0
-OE2 => inst30.IN1
-Q1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-D1 => inst4.IN1
-Q2 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
-D2 => inst15.IN1
-Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
-D3 => inst22.IN1
+|ci_74LS283_unidade_aritmetica
+S1 <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+A1 => instA1.IN0
+A1 => inst3A.IN0
+B1 => instA1.IN1
+B1 => inst3A.IN1
+C0 => inst6.IN0
+S2 <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst.IN0
+A2 => inst3.IN0
+B2 => inst.IN1
+B2 => inst3.IN1
+S3 <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst26.IN0
+A3 => inst4.IN0
+B3 => inst26.IN1
+B3 => inst4.IN1
+S4 <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+A4 => inst27.IN0
+A4 => inst5.IN0
+B4 => inst27.IN1
+B4 => inst5.IN1
+C4 <= inst30.DB_MAX_OUTPUT_PORT_TYPE
 
 

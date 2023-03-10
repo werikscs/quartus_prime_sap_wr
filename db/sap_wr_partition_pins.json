@@ -4,59 +4,59 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Q0",
+					"name" : "S1",
 					"strict" : false
 				},
 				{
-					"name" : "Q1",
+					"name" : "S2",
 					"strict" : false
 				},
 				{
-					"name" : "Q2",
+					"name" : "S3",
 					"strict" : false
 				},
 				{
-					"name" : "Q3",
+					"name" : "S4",
 					"strict" : false
 				},
 				{
-					"name" : "OE1",
+					"name" : "C4",
 					"strict" : false
 				},
 				{
-					"name" : "OE2",
+					"name" : "A1",
 					"strict" : false
 				},
 				{
-					"name" : "D0",
+					"name" : "B1",
 					"strict" : false
 				},
 				{
-					"name" : "clock",
+					"name" : "C0",
 					"strict" : false
 				},
 				{
-					"name" : "clear",
+					"name" : "B2",
 					"strict" : false
 				},
 				{
-					"name" : "IE1",
+					"name" : "A2",
 					"strict" : false
 				},
 				{
-					"name" : "IE2",
+					"name" : "A3",
 					"strict" : false
 				},
 				{
-					"name" : "D1",
+					"name" : "B3",
 					"strict" : false
 				},
 				{
-					"name" : "D2",
+					"name" : "A4",
 					"strict" : false
 				},
 				{
-					"name" : "D3",
+					"name" : "B4",
 					"strict" : false
 				}
 			]
