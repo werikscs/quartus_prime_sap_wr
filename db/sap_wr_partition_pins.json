@@ -4,43 +4,75 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "bus0",
+					"name" : "CE",
 					"strict" : false
 				},
 				{
-					"name" : "bus1",
+					"name" : "A0",
 					"strict" : false
 				},
 				{
-					"name" : "bus2",
+					"name" : "B0",
 					"strict" : false
 				},
 				{
-					"name" : "bus3",
+					"name" : "AB_AB",
 					"strict" : false
 				},
 				{
-					"name" : "bus4",
+					"name" : "A1",
 					"strict" : false
 				},
 				{
-					"name" : "bus5",
+					"name" : "B1",
 					"strict" : false
 				},
 				{
-					"name" : "bus7",
+					"name" : "A2",
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK",
+					"name" : "B2",
 					"strict" : false
 				},
 				{
-					"name" : "RESET",
+					"name" : "A3",
 					"strict" : false
 				},
 				{
-					"name" : "BR_IN",
+					"name" : "B3",
+					"strict" : false
+				},
+				{
+					"name" : "A4",
+					"strict" : false
+				},
+				{
+					"name" : "B4",
+					"strict" : false
+				},
+				{
+					"name" : "A5",
+					"strict" : false
+				},
+				{
+					"name" : "B5",
+					"strict" : false
+				},
+				{
+					"name" : "A6",
+					"strict" : false
+				},
+				{
+					"name" : "B6",
+					"strict" : false
+				},
+				{
+					"name" : "A7",
+					"strict" : false
+				},
+				{
+					"name" : "B7",
 					"strict" : false
 				}
 			]

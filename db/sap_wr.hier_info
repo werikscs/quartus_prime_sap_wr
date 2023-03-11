@@ -1,24 +1,4 @@
-|cp_b_register
-bus0 <> ci_74LS245_octal_bus:inst2.B0
-bus1 <> ci_74LS245_octal_bus:inst2.B1
-bus2 <> ci_74LS245_octal_bus:inst2.B2
-bus3 <> ci_74LS245_octal_bus:inst2.B3
-bus4 <> ci_74LS245_octal_bus:inst2.B4
-bus5 <> ci_74LS245_octal_bus:inst2.B5
-bus6 <> ci_74LS245_octal_bus:inst2.B6
-bus7 <> ci_74LS245_octal_bus:inst2.B7
-BR_OUT => ci_74LS245_octal_bus:inst2.CE
-BR_IN => ci_74LS173A:inst.IE1
-BR_IN => ci_74LS173A:inst.IE2
-BR_IN => ci_74LS173A:inst1.IE1
-BR_IN => ci_74LS173A:inst1.IE2
-CLOCK => ci_74LS173A:inst.clock
-CLOCK => ci_74LS173A:inst1.clock
-RESET => ci_74LS173A:inst.clear
-RESET => ci_74LS173A:inst1.clear
-
-
-|cp_b_register|ci_74LS245_octal_bus:inst2
+|ci_74LS245_octal_bus
 A0 <> inst7
 B0 <> inst15
 A1 <> inst1
@@ -35,45 +15,5 @@ A6 <> inst4
 B6 <> inst17
 A7 <> inst5
 B7 <> inst13
-
-
-|cp_b_register|ci_74LS173A:inst
-Q0 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-clear => inst31.IN0
-clock => inst5.CLK
-clock => inst9.CLK
-clock => inst18.CLK
-clock => inst25.CLK
-IE1 => inst.IN0
-IE2 => inst.IN1
-D0 => inst1.IN1
-OE1 => inst30.IN0
-OE2 => inst30.IN1
-Q1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-D1 => inst4.IN1
-Q2 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
-D2 => inst15.IN1
-Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
-D3 => inst22.IN1
-
-
-|cp_b_register|ci_74LS173A:inst1
-Q0 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-clear => inst31.IN0
-clock => inst5.CLK
-clock => inst9.CLK
-clock => inst18.CLK
-clock => inst25.CLK
-IE1 => inst.IN0
-IE2 => inst.IN1
-D0 => inst1.IN1
-OE1 => inst30.IN0
-OE2 => inst30.IN1
-Q1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-D1 => inst4.IN1
-Q2 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
-D2 => inst15.IN1
-Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
-D3 => inst22.IN1
 
 
