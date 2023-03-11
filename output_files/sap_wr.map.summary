@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Mar 10 19:43:47 2023
+Analysis & Synthesis Status : Successful - Fri Mar 10 22:28:44 2023
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : sap_wr
-Top-level Entity Name : ci_74LS283_unidade_aritmetica
+Top-level Entity Name : cp_b_register
 Family : MAX 10
-Total logic elements : 12
-    Total combinational functions : 12
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 14
+Total logic elements : 7
+    Total combinational functions : 0
+    Dedicated logic registers : 7
+Total registers : 7
+Total pins : 12
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
