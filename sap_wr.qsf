@@ -57,7 +57,6 @@ set_global_assignment -name BDF_FILE ci_74LS245_octal_bus.bdf
 set_global_assignment -name BDF_FILE ci_74LS173A.bdf
 set_global_assignment -name BDF_FILE ci_74LS157.bdf
 set_global_assignment -name BDF_FILE cp_acc_a_register.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/qsim/test_acc_register.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

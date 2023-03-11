@@ -5,7 +5,6 @@ source_file = 1, /home/wcs/Documents/sap_wr/ci_74LS245_octal_bus.bdf
 source_file = 1, /home/wcs/Documents/sap_wr/ci_74LS173A.bdf
 source_file = 1, /home/wcs/Documents/sap_wr/ci_74LS157.bdf
 source_file = 1, /home/wcs/Documents/sap_wr/cp_acc_a_register.bdf
-source_file = 1, /home/wcs/Documents/sap_wr/simulation/qsim/test_acc_register.vwf
 source_file = 1, /home/wcs/Documents/sap_wr/db/sap_wr.cbx.xml
 design_name = cp_b_register
 instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, cp_b_register, 1

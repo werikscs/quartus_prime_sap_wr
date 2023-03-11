@@ -139,13 +139,13 @@ R14
 R10
 R11
 vcp_b_register
-Z15 !s110 1678498361
+Z15 !s110 1678499553
 !i10b 1
 !s100 B8DEH@O2=ELT^WPP0Rbad0
 Iib?oZz2]>mJzaQh@aV3bT2
 R2
 R0
-Z16 w1678498359
+Z16 w1678499550
 R3
 R4
 R5
@@ -153,30 +153,30 @@ R6
 r1
 !s85 0
 31
-Z17 !s108 1678498361.000000
+Z17 !s108 1678499553.000000
 R8
 R9
 !i113 1
 R10
 R11
 vcp_b_register_vlg_vec_tst
-!s110 1678498362
+R15
 !i10b 1
-!s100 Z`0S?zIDXmCA7Mf4?i`J`2
-IHD1LamoPJ<l8P=mnb@TfX2
+!s100 edLQ?HNT?O>1;f]YR[1`k0
+Ie]8L6M[S0n2kekKifFZlL3
 R2
 R0
-w1678498355
-8test_b_register.vwf.vt
-Ftest_b_register.vwf.vt
+w1678499546
+8test_74ls245_octal_bus.vwf.vt
+Ftest_74ls245_octal_bus.vwf.vt
 R12
 R6
 r1
 !s85 0
 31
 R17
-!s107 test_b_register.vwf.vt|
-!s90 -work|work|test_b_register.vwf.vt|
+!s107 test_74ls245_octal_bus.vwf.vt|
+!s90 -work|work|test_74ls245_octal_bus.vwf.vt|
 !i113 1
 R10
 R11
