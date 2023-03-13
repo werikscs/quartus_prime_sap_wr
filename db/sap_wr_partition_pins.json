@@ -4,75 +4,59 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "CE",
+					"name" : "Q0",
 					"strict" : false
 				},
 				{
-					"name" : "A0",
+					"name" : "Q1",
 					"strict" : false
 				},
 				{
-					"name" : "B0",
+					"name" : "Q2",
 					"strict" : false
 				},
 				{
-					"name" : "AB_AB",
+					"name" : "Q3",
 					"strict" : false
 				},
 				{
-					"name" : "A1",
+					"name" : "RCO",
 					"strict" : false
 				},
 				{
-					"name" : "B1",
+					"name" : "ENT",
 					"strict" : false
 				},
 				{
-					"name" : "A2",
+					"name" : "MR",
 					"strict" : false
 				},
 				{
-					"name" : "B2",
+					"name" : "load",
 					"strict" : false
 				},
 				{
-					"name" : "A3",
+					"name" : "D0",
 					"strict" : false
 				},
 				{
-					"name" : "B3",
+					"name" : "ENP",
 					"strict" : false
 				},
 				{
-					"name" : "A4",
+					"name" : "CLK",
 					"strict" : false
 				},
 				{
-					"name" : "B4",
+					"name" : "D1",
 					"strict" : false
 				},
 				{
-					"name" : "A5",
+					"name" : "D2",
 					"strict" : false
 				},
 				{
-					"name" : "B5",
-					"strict" : false
-				},
-				{
-					"name" : "A6",
-					"strict" : false
-				},
-				{
-					"name" : "B6",
-					"strict" : false
-				},
-				{
-					"name" : "A7",
-					"strict" : false
-				},
-				{
-					"name" : "B7",
+					"name" : "D3",
 					"strict" : false
 				}
 			]

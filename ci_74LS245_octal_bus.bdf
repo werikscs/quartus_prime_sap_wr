@@ -21,24 +21,6 @@ refer to the applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(bidir)
-	(rect 152 440 168 616)
-	(text "BIDIR" (rect 0 1 10 26)(font "Arial" (font_size 6))(vertical))
-	(text "CE" (rect 2 88 13 103)(font "Arial" )(vertical))
-	(pt 8 0)
-	(drawing
-		(line (pt 4 56)(pt 4 78))
-		(line (pt 8 0)(pt 8 52))
-		(line (pt 12 56)(pt 12 78))
-		(line (pt 4 78)(pt 8 82))
-		(line (pt 12 78)(pt 8 82))
-		(line (pt 4 56)(pt 8 52))
-		(line (pt 8 52)(pt 12 56))
-	)
-	(flipy_rotate90)
-	(text "VCC" (rect 7 4 17 24)(font "Arial" (font_size 6))(vertical))
-)
-(pin
-	(bidir)
 	(rect 256 440 272 616)
 	(text "BIDIR" (rect 0 1 10 26)(font "Arial" (font_size 6))(vertical))
 	(text "A0" (rect 3 114 16 128)(font "Intel Clear" )(vertical))
@@ -329,7 +311,7 @@ refer to the applicable agreement for further details.
 	(bidir)
 	(rect 200 -104 216 72)
 	(text "BIDIR" (rect 0 151 10 176)(font "Arial" (font_size 6))(vertical))
-	(text "AB_AB" (rect 1 5 14 40)(font "Intel Clear" )(vertical))
+	(text "CE" (rect 2 5 15 20)(font "Intel Clear" )(vertical))
 	(pt 8 176)
 	(drawing
 		(line (pt 4 120)(pt 4 98))
@@ -342,6 +324,24 @@ refer to the applicable agreement for further details.
 	)
 	(rotate90)
 	(text "VCC" (rect 7 152 17 172)(font "Arial" (font_size 6))(vertical))
+)
+(pin
+	(bidir)
+	(rect 152 440 168 616)
+	(text "BIDIR" (rect 0 1 10 26)(font "Arial" (font_size 6))(vertical))
+	(text "AB_BA" (rect 2 88 13 125)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 4 56)(pt 4 78))
+		(line (pt 8 0)(pt 8 52))
+		(line (pt 12 56)(pt 12 78))
+		(line (pt 4 78)(pt 8 82))
+		(line (pt 12 78)(pt 8 82))
+		(line (pt 4 56)(pt 8 52))
+		(line (pt 8 52)(pt 12 56))
+	)
+	(flipy_rotate90)
+	(text "VCC" (rect 7 4 17 24)(font "Arial" (font_size 6))(vertical))
 )
 (symbol
 	(rect 344 168 376 216)
@@ -1186,10 +1186,6 @@ refer to the applicable agreement for further details.
 	(pt 568 272)
 )
 (connector
-	(pt 512 240)
-	(pt 568 240)
-)
-(connector
 	(pt 584 216)
 	(pt 584 232)
 )
@@ -1410,22 +1406,6 @@ refer to the applicable agreement for further details.
 	(pt 528 160)
 )
 (connector
-	(pt 600 240)
-	(pt 600 232)
-)
-(connector
-	(pt 600 232)
-	(pt 608 232)
-)
-(connector
-	(pt 568 240)
-	(pt 600 240)
-)
-(connector
-	(pt 600 240)
-	(pt 632 240)
-)
-(connector
 	(pt 608 232)
 	(pt 608 160)
 )
@@ -1593,6 +1573,22 @@ refer to the applicable agreement for further details.
 	(pt 208 120)
 	(pt 208 392)
 )
+(connector
+	(pt 512 240)
+	(pt 568 240)
+)
+(connector
+	(pt 568 240)
+	(pt 632 240)
+)
+(connector
+	(pt 608 232)
+	(pt 600 232)
+)
+(connector
+	(pt 600 248)
+	(pt 600 232)
+)
 (junction (pt 160 336))
 (junction (pt 560 224))
 (junction (pt 504 224))
@@ -1607,8 +1603,6 @@ refer to the applicable agreement for further details.
 (junction (pt 400 240))
 (junction (pt 456 240))
 (junction (pt 512 240))
-(junction (pt 568 240))
-(junction (pt 600 240))
 (junction (pt 264 304))
 (junction (pt 320 304))
 (junction (pt 376 304))
@@ -1626,3 +1620,4 @@ refer to the applicable agreement for further details.
 (junction (pt 472 160))
 (junction (pt 528 160))
 (junction (pt 208 120))
+(junction (pt 568 240))
