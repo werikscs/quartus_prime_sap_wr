@@ -4,59 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Q0",
+					"name" : "Bus_3",
 					"strict" : false
 				},
 				{
-					"name" : "Q1",
+					"name" : "BUS_2",
 					"strict" : false
 				},
 				{
-					"name" : "Q2",
+					"name" : "BUS_0",
 					"strict" : false
 				},
 				{
-					"name" : "Q3",
+					"name" : "BUS_1",
 					"strict" : false
 				},
 				{
-					"name" : "RCO",
+					"name" : "PC_OUT",
 					"strict" : false
 				},
 				{
-					"name" : "ENT",
+					"name" : "JMP",
 					"strict" : false
 				},
 				{
-					"name" : "MR",
+					"name" : "RESET",
 					"strict" : false
 				},
 				{
-					"name" : "load",
+					"name" : "PC_INC",
 					"strict" : false
 				},
 				{
-					"name" : "D0",
-					"strict" : false
-				},
-				{
-					"name" : "ENP",
-					"strict" : false
-				},
-				{
-					"name" : "CLK",
-					"strict" : false
-				},
-				{
-					"name" : "D1",
-					"strict" : false
-				},
-				{
-					"name" : "D2",
-					"strict" : false
-				},
-				{
-					"name" : "D3",
+					"name" : "CLOCK",
 					"strict" : false
 				}
 			]
