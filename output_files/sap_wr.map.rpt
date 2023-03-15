@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sap_wr
-Tue Mar 14 22:38:34 2023
+Tue Mar 14 22:54:54 2023
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,16 +42,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 14 22:38:34 2023       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 14 22:54:53 2023       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; sap_wr                                      ;
-; Top-level Entity Name              ; ci_74LS157                                  ;
+; Top-level Entity Name              ; cp_b_register                               ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 4                                           ;
-;     Total combinational functions  ; 4                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 14                                          ;
+; Total logic elements               ; 8                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 8                                           ;
+; Total registers                    ; 8                                           ;
+; Total pins                         ; 12                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; ci_74LS157         ; sap_wr             ;
+; Top-level entity name                                            ; cp_b_register      ; sap_wr             ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -163,54 +163,58 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path              ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------+---------+
-; ci_74LS157.bdf                   ; yes             ; User Block Diagram/Schematic File  ; /home/wcs/Documents/sap_wr/ci_74LS157.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
+; cp_b_register.bdf                ; yes             ; User Block Diagram/Schematic File  ; /home/wcs/Documents/sap_wr/cp_b_register.bdf        ;         ;
+; ci_74LS245_octal_bus.bdf         ; yes             ; User Block Diagram/Schematic File  ; /home/wcs/Documents/sap_wr/ci_74LS245_octal_bus.bdf ;         ;
+; ci_74LS173A.bdf                  ; yes             ; User Block Diagram/Schematic File  ; /home/wcs/Documents/sap_wr/ci_74LS173A.bdf          ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------+---------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+---------------------------------------------+---------+
-; Resource                                    ; Usage   ;
-+---------------------------------------------+---------+
-; Estimated Total logic elements              ; 4       ;
-;                                             ;         ;
-; Total combinational functions               ; 4       ;
-; Logic element usage by number of LUT inputs ;         ;
-;     -- 4 input functions                    ; 4       ;
-;     -- 3 input functions                    ; 0       ;
-;     -- <=2 input functions                  ; 0       ;
-;                                             ;         ;
-; Logic elements by mode                      ;         ;
-;     -- normal mode                          ; 4       ;
-;     -- arithmetic mode                      ; 0       ;
-;                                             ;         ;
-; Total registers                             ; 0       ;
-;     -- Dedicated logic registers            ; 0       ;
-;     -- I/O registers                        ; 0       ;
-;                                             ;         ;
-; I/O pins                                    ; 14      ;
-;                                             ;         ;
-; Embedded Multiplier 9-bit elements          ; 0       ;
-;                                             ;         ;
-; Maximum fan-out node                        ; S~input ;
-; Maximum fan-out                             ; 4       ;
-; Total fan-out                               ; 34      ;
-; Average fan-out                             ; 1.06    ;
-+---------------------------------------------+---------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 8            ;
+;                                             ;              ;
+; Total combinational functions               ; 0            ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 0            ;
+;     -- 3 input functions                    ; 0            ;
+;     -- <=2 input functions                  ; 0            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 0            ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 8            ;
+;     -- Dedicated logic registers            ; 8            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 12           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; BR_OUT~input ;
+; Maximum fan-out                             ; 8            ;
+; Total fan-out                               ; 68           ;
+; Average fan-out                             ; 1.70         ;
++---------------------------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |ci_74LS157                ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 14   ; 0            ; 0          ; |ci_74LS157         ; ci_74LS157  ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                               ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name              ; Entity Name   ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------+---------------+--------------+
+; |cp_b_register             ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 12   ; 0            ; 0          ; |cp_b_register                   ; cp_b_register ; work         ;
+;    |ci_74LS173A:inst1|     ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |cp_b_register|ci_74LS173A:inst1 ; ci_74LS173A   ; work         ;
+;    |ci_74LS173A:inst|      ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |cp_b_register|ci_74LS173A:inst  ; ci_74LS173A   ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -219,29 +223,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 8     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 8     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 14                          ;
-; cycloneiii_lcell_comb ; 4                           ;
-;     normal            ; 4                           ;
-;         4 data inputs ; 4                           ;
-;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 1.00                        ;
-+-----------------------+-----------------------------+
++--------------------+--------------------------------+
+; Type               ; Count                          ;
++--------------------+--------------------------------+
+; boundary_port      ; 12                             ;
+; cycloneiii_ff      ; 8                              ;
+;     ENA CLR        ; 8                              ;
+; cycloneiii_io_obuf ; 8                              ;
+;                    ;                                ;
+; Max LUT depth      ; 0.00                           ;
+; Average LUT depth  ; 0.00                           ;
++--------------------+--------------------------------+
 
 
 +-------------------------------+
@@ -249,7 +253,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -259,7 +263,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Mar 14 22:37:49 2023
+    Info: Processing started: Tue Mar 14 22:54:06 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sap_wr -c sap_wr
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -279,18 +283,30 @@ Info (12021): Found 1 design units, including 1 entities, in source file ci_74LS
     Info (12023): Found entity 1: ci_74LS173A
 Info (12021): Found 1 design units, including 1 entities, in source file cp_acc_a_register.bdf
     Info (12023): Found entity 1: cp_acc_a_register
-Info (12127): Elaborating entity "ci_74LS157" for the top level hierarchy
+Info (12127): Elaborating entity "cp_b_register" for the top level hierarchy
+Info (12128): Elaborating entity "ci_74LS245_octal_bus" for hierarchy "ci_74LS245_octal_bus:inst5"
+Info (12128): Elaborating entity "ci_74LS173A" for hierarchy "ci_74LS173A:inst"
+Warning (13027): Removed fan-outs from the following always-disabled I/O buffers
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "ci_74LS245_octal_bus:inst5|inst7" to the node "ci_74LS245_octal_bus:inst5|inst15"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "ci_74LS245_octal_bus:inst5|inst1" to the node "ci_74LS245_octal_bus:inst5|inst9"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "ci_74LS245_octal_bus:inst5|inst" to the node "ci_74LS245_octal_bus:inst5|inst8"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "ci_74LS245_octal_bus:inst5|inst6" to the node "ci_74LS245_octal_bus:inst5|inst14"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "ci_74LS245_octal_bus:inst5|inst2" to the node "ci_74LS245_octal_bus:inst5|inst10"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "ci_74LS245_octal_bus:inst5|inst3" to the node "ci_74LS245_octal_bus:inst5|inst11"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "ci_74LS245_octal_bus:inst5|inst4" to the node "ci_74LS245_octal_bus:inst5|inst12"
+    Warning (13028): Removed fan-out from the always-disabled I/O buffer "ci_74LS245_octal_bus:inst5|inst5" to the node "ci_74LS245_octal_bus:inst5|inst13"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 4 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 940 megabytes
-    Info: Processing ended: Tue Mar 14 22:38:34 2023
-    Info: Elapsed time: 00:00:45
-    Info: Total CPU time (on all processors): 00:01:19
+Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 0 output pins
+    Info (21060): Implemented 8 bidirectional pins
+    Info (21061): Implemented 8 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 941 megabytes
+    Info: Processing ended: Tue Mar 14 22:54:54 2023
+    Info: Elapsed time: 00:00:48
+    Info: Total CPU time (on all processors): 00:01:18
 
 
