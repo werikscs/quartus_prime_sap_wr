@@ -1,0 +1,193 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "03/17/2023 17:45:35"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          cp_memoria_ram
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module cp_memoria_ram_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg addr_0;
+reg addr_1;
+reg addr_2;
+reg addr_3;
+reg ram_in0;
+reg ram_in1;
+reg ram_in2;
+reg ram_in3;
+reg ram_in4;
+reg ram_in5;
+reg ram_in6;
+reg ram_in7;
+reg RAM_OUT;
+reg WE;
+// wires                                               
+wire bus_0;
+wire bus_1;
+wire bus_2;
+wire bus_3;
+wire bus_4;
+wire bus_5;
+wire bus_6;
+wire bus_7;
+
+// assign statements (if any)                          
+cp_memoria_ram i1 (
+// port map - connection between master ports and signals/registers   
+	.addr_0(addr_0),
+	.addr_1(addr_1),
+	.addr_2(addr_2),
+	.addr_3(addr_3),
+	.bus_0(bus_0),
+	.bus_1(bus_1),
+	.bus_2(bus_2),
+	.bus_3(bus_3),
+	.bus_4(bus_4),
+	.bus_5(bus_5),
+	.bus_6(bus_6),
+	.bus_7(bus_7),
+	.ram_in0(ram_in0),
+	.ram_in1(ram_in1),
+	.ram_in2(ram_in2),
+	.ram_in3(ram_in3),
+	.ram_in4(ram_in4),
+	.ram_in5(ram_in5),
+	.ram_in6(ram_in6),
+	.ram_in7(ram_in7),
+	.RAM_OUT(RAM_OUT),
+	.WE(WE)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// addr_0
+initial
+begin
+	addr_0 = 1'b0;
+end 
+
+// addr_1
+initial
+begin
+	addr_1 = 1'b0;
+end 
+
+// addr_2
+initial
+begin
+	addr_2 = 1'b0;
+	addr_2 = #130000 1'b1;
+	addr_2 = #250000 1'b0;
+	addr_2 = #390000 1'b1;
+end 
+
+// addr_3
+initial
+begin
+	addr_3 = 1'b0;
+	addr_3 = #130000 1'b1;
+	addr_3 = #250000 1'b0;
+	addr_3 = #390000 1'b1;
+end 
+
+// ram_in0
+initial
+begin
+	ram_in0 = 1'b1;
+end 
+
+// ram_in1
+initial
+begin
+	ram_in1 = 1'b1;
+end 
+
+// ram_in2
+initial
+begin
+	ram_in2 = 1'b1;
+end 
+
+// ram_in3
+initial
+begin
+	ram_in3 = 1'b1;
+end 
+
+// ram_in4
+initial
+begin
+	ram_in4 = 1'b1;
+	ram_in4 = #190000 1'b0;
+	ram_in4 = #60000 1'b1;
+end 
+
+// ram_in5
+initial
+begin
+	ram_in5 = 1'b1;
+	ram_in5 = #190000 1'b0;
+	ram_in5 = #60000 1'b1;
+end 
+
+// ram_in6
+initial
+begin
+	ram_in6 = 1'b1;
+	ram_in6 = #190000 1'b0;
+	ram_in6 = #60000 1'b1;
+end 
+
+// ram_in7
+initial
+begin
+	ram_in7 = 1'b1;
+	ram_in7 = #190000 1'b0;
+	ram_in7 = #60000 1'b1;
+end 
+
+// RAM_OUT
+initial
+begin
+	RAM_OUT = 1'b0;
+	RAM_OUT = #50000 1'b1;
+	RAM_OUT = #30000 1'b0;
+	RAM_OUT = #110000 1'b1;
+	RAM_OUT = #60000 1'b0;
+end 
+
+// WE
+initial
+begin
+	WE = 1'b0;
+	WE = #50000 1'b1;
+	WE = #30000 1'b0;
+	WE = #110000 1'b1;
+	WE = #60000 1'b0;
+end 
+endmodule
+

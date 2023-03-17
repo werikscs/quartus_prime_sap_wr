@@ -1,0 +1,114 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 160 224)
+	(text "ci_74ls04" (rect 5 0 60 15)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 143 26 156)(font "Intel Clear" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "P9" (rect 0 0 15 15)(font "Intel Clear" (font_size 8)))
+		(text "P9" (rect 21 67 36 82)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 72)(pt 16 72))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "P11" (rect 0 0 23 15)(font "Intel Clear" (font_size 8)))
+		(text "P11" (rect 21 83 44 98)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "P13" (rect 0 0 23 15)(font "Intel Clear" (font_size 8)))
+		(text "P13" (rect 21 99 44 114)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 104)(pt 16 104))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "P1" (rect 0 0 15 15)(font "Intel Clear" (font_size 8)))
+		(text "P1" (rect 21 19 36 34)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 24)(pt 16 24))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "P3" (rect 0 0 15 15)(font "Intel Clear" (font_size 8)))
+		(text "P3" (rect 21 35 36 50)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "P5" (rect 0 0 15 15)(font "Intel Clear" (font_size 8)))
+		(text "P5" (rect 21 51 36 66)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 96 72)
+		(output)
+		(text "p8" (rect 0 0 15 15)(font "Intel Clear" (font_size 8)))
+		(text "p8" (rect 60 67 75 82)(font "Intel Clear" (font_size 8)))
+		(line (pt 96 72)(pt 80 72))
+	)
+	(port
+		(pt 96 88)
+		(output)
+		(text "p10" (rect 0 0 23 15)(font "Intel Clear" (font_size 8)))
+		(text "p10" (rect 52 83 75 98)(font "Intel Clear" (font_size 8)))
+		(line (pt 96 88)(pt 80 88))
+	)
+	(port
+		(pt 96 104)
+		(output)
+		(text "p12" (rect 0 0 23 15)(font "Intel Clear" (font_size 8)))
+		(text "p12" (rect 52 99 75 114)(font "Intel Clear" (font_size 8)))
+		(line (pt 96 104)(pt 80 104))
+	)
+	(port
+		(pt 96 24)
+		(output)
+		(text "p2" (rect 0 0 15 15)(font "Intel Clear" (font_size 8)))
+		(text "p2" (rect 60 19 75 34)(font "Intel Clear" (font_size 8)))
+		(line (pt 96 24)(pt 80 24))
+	)
+	(port
+		(pt 96 40)
+		(output)
+		(text "p4" (rect 0 0 15 15)(font "Intel Clear" (font_size 8)))
+		(text "p4" (rect 60 35 75 50)(font "Intel Clear" (font_size 8)))
+		(line (pt 96 40)(pt 80 40))
+	)
+	(port
+		(pt 96 56)
+		(output)
+		(text "p6" (rect 0 0 15 15)(font "Intel Clear" (font_size 8)))
+		(text "p6" (rect 60 51 75 66)(font "Intel Clear" (font_size 8)))
+		(line (pt 96 56)(pt 80 56))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 144))
+	)
+)

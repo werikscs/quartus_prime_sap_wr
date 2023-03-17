@@ -1,0 +1,184 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 168 304)
+	(text "cp_memoria_ram" (rect 5 0 105 15)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 271 26 284)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "ram_in7" (rect 0 0 47 15)(font "Intel Clear" (font_size 8)))
+		(text "ram_in7" (rect 21 27 68 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ram_in6" (rect 0 0 47 15)(font "Intel Clear" (font_size 8)))
+		(text "ram_in6" (rect 21 43 68 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "ram_in5" (rect 0 0 47 15)(font "Intel Clear" (font_size 8)))
+		(text "ram_in5" (rect 21 59 68 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "ram_in4" (rect 0 0 47 15)(font "Intel Clear" (font_size 8)))
+		(text "ram_in4" (rect 21 75 68 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "WE" (rect 0 0 20 15)(font "Intel Clear" (font_size 8)))
+		(text "WE" (rect 21 91 41 106)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "addr_3" (rect 0 0 41 15)(font "Intel Clear" (font_size 8)))
+		(text "addr_3" (rect 21 107 62 122)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "addr_2" (rect 0 0 41 15)(font "Intel Clear" (font_size 8)))
+		(text "addr_2" (rect 21 123 62 138)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "addr_1" (rect 0 0 41 15)(font "Intel Clear" (font_size 8)))
+		(text "addr_1" (rect 21 139 62 154)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "addr_0" (rect 0 0 41 15)(font "Intel Clear" (font_size 8)))
+		(text "addr_0" (rect 21 155 62 170)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "ram_in3" (rect 0 0 47 15)(font "Intel Clear" (font_size 8)))
+		(text "ram_in3" (rect 21 171 68 186)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "ram_in2" (rect 0 0 47 15)(font "Intel Clear" (font_size 8)))
+		(text "ram_in2" (rect 21 187 68 202)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "ram_in1" (rect 0 0 47 15)(font "Intel Clear" (font_size 8)))
+		(text "ram_in1" (rect 21 203 68 218)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "ram_in0" (rect 0 0 47 15)(font "Intel Clear" (font_size 8)))
+		(text "ram_in0" (rect 21 219 68 234)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "RAM_OUT" (rect 0 0 60 15)(font "Intel Clear" (font_size 8)))
+		(text "RAM_OUT" (rect 21 235 81 250)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "bus_7" (rect 0 0 35 15)(font "Intel Clear" (font_size 8)))
+		(text "bus_7" (rect 96 27 131 42)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 32)(pt 136 32))
+	)
+	(port
+		(pt 152 48)
+		(output)
+		(text "bus_6" (rect 0 0 35 15)(font "Intel Clear" (font_size 8)))
+		(text "bus_6" (rect 96 43 131 58)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 48)(pt 136 48))
+	)
+	(port
+		(pt 152 64)
+		(output)
+		(text "bus_5" (rect 0 0 35 15)(font "Intel Clear" (font_size 8)))
+		(text "bus_5" (rect 96 59 131 74)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 64)(pt 136 64))
+	)
+	(port
+		(pt 152 80)
+		(output)
+		(text "bus_4" (rect 0 0 35 15)(font "Intel Clear" (font_size 8)))
+		(text "bus_4" (rect 96 75 131 90)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 80)(pt 136 80))
+	)
+	(port
+		(pt 152 96)
+		(output)
+		(text "bus_3" (rect 0 0 35 15)(font "Intel Clear" (font_size 8)))
+		(text "bus_3" (rect 96 91 131 106)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 96)(pt 136 96))
+	)
+	(port
+		(pt 152 112)
+		(output)
+		(text "bus_2" (rect 0 0 35 15)(font "Intel Clear" (font_size 8)))
+		(text "bus_2" (rect 96 107 131 122)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 112)(pt 136 112))
+	)
+	(port
+		(pt 152 128)
+		(output)
+		(text "bus_1" (rect 0 0 35 15)(font "Intel Clear" (font_size 8)))
+		(text "bus_1" (rect 96 123 131 138)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 128)(pt 136 128))
+	)
+	(port
+		(pt 152 144)
+		(output)
+		(text "bus_0" (rect 0 0 35 15)(font "Intel Clear" (font_size 8)))
+		(text "bus_0" (rect 96 139 131 154)(font "Intel Clear" (font_size 8)))
+		(line (pt 152 144)(pt 136 144))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 272))
+	)
+)
