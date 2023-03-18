@@ -4,39 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "bus0",
+					"name" : "out_b7",
 					"strict" : false
 				},
 				{
-					"name" : "bus1",
+					"name" : "out_b6",
 					"strict" : false
 				},
 				{
-					"name" : "bus2",
+					"name" : "out_b5",
 					"strict" : false
 				},
 				{
-					"name" : "bus3",
+					"name" : "out_b4",
 					"strict" : false
 				},
 				{
-					"name" : "bus4",
+					"name" : "out_b3",
 					"strict" : false
 				},
 				{
-					"name" : "bus5",
+					"name" : "out_b2",
 					"strict" : false
 				},
 				{
-					"name" : "bus6",
+					"name" : "out_b1",
+					"strict" : false
+				},
+				{
+					"name" : "out_b0",
 					"strict" : false
 				},
 				{
 					"name" : "bus7",
-					"strict" : false
-				},
-				{
-					"name" : "IR_OUT",
 					"strict" : false
 				},
 				{
@@ -48,7 +48,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "IR_IN",
+					"name" : "OPR_IN",
+					"strict" : false
+				},
+				{
+					"name" : "bus6",
+					"strict" : false
+				},
+				{
+					"name" : "bus5",
+					"strict" : false
+				},
+				{
+					"name" : "bus4",
+					"strict" : false
+				},
+				{
+					"name" : "bus3",
+					"strict" : false
+				},
+				{
+					"name" : "bus2",
+					"strict" : false
+				},
+				{
+					"name" : "bus1",
+					"strict" : false
+				},
+				{
+					"name" : "bus0",
 					"strict" : false
 				}
 			]
