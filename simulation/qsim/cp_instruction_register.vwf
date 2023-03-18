@@ -1,16 +1,16 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off sap_wr -c sap_wr --vector_source="/home/wcs/Documents/sap_wr/simulation/qsim/Waveform.vwf" --testbench_file="/home/wcs/Documents/sap_wr/simulation/qsim/Waveform.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off sap_wr -c sap_wr --vector_source="/home/wcs/Documents/sap_wr/simulation/qsim/Waveform.vwf" --testbench_file="/home/wcs/Documents/sap_wr/simulation/qsim/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off sap_wr -c sap_wr --vector_source="/home/wcs/Documents/sap_wr/simulation/qsim/cp_instruction_register.vwf" --testbench_file="/home/wcs/Documents/sap_wr/simulation/qsim/cp_instruction_register.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off sap_wr -c sap_wr --vector_source="/home/wcs/Documents/sap_wr/Waveform.vwf" --testbench_file="/home/wcs/Documents/sap_wr/simulation/qsim/Waveform.vwf.vt"</ttestbench_cmd>
 <fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="/home/wcs/Documents/sap_wr/simulation/qsim/" sap_wr -c sap_wr</fnetlist_cmd>
 <tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="/home/wcs/Documents/sap_wr/simulation/qsim/" sap_wr -c sap_wr</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work sap_wr.vo
-vlog -work work Waveform.vwf.vt
-vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.cp_b_register_vlg_vec_tst
+vlog -work work cp_instruction_register.vwf.vt
+vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.cp_instruction_register_vlg_vec_tst
 vcd file -direction sap_wr.msim.vcd
-vcd add -internal cp_b_register_vlg_vec_tst/*
-vcd add -internal cp_b_register_vlg_vec_tst/i1/*
+vcd add -internal cp_instruction_register_vlg_vec_tst/*
+vcd add -internal cp_instruction_register_vlg_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -20,15 +20,16 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vlog -work work sap_wr.vo
-vlog -work work simulation/qsim/Waveform.vwf.vt
-vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.cp_b_register_vlg_vec_tst
+vlog -work work Waveform.vwf.vt
+vsim -novopt -c -t 1ps -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.cp_instruction_register_vlg_vec_tst
 vcd file -direction sap_wr.msim.vcd
-vcd add -internal cp_b_register_vlg_vec_tst/*
-vcd add -internal cp_b_register_vlg_vec_tst/i1/*
+vcd add -internal cp_instruction_register_vlg_vec_tst/*
+vcd add -internal cp_instruction_register_vlg_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -73,26 +75,6 @@ HEADER
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
 	GRID_DUTY_CYCLE = 50;
-}
-
-SIGNAL("BR_IN")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
-}
-
-SIGNAL("BR_OUT")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "";
 }
 
 SIGNAL("bus0")
@@ -185,6 +167,26 @@ SIGNAL("CLOCK")
 	PARENT = "";
 }
 
+SIGNAL("IR_IN")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("IR_OUT")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
 SIGNAL("RESET")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -195,47 +197,23 @@ SIGNAL("RESET")
 	PARENT = "";
 }
 
-TRANSITION_LIST("BR_IN")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 450.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 300.0;
-		LEVEL 0 FOR 100.0;
-	}
-}
-
-TRANSITION_LIST("BR_OUT")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 25.0;
-	}
-}
-
 TRANSITION_LIST("bus0")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
 	}
 }
 
@@ -244,14 +222,14 @@ TRANSITION_LIST("bus1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 25.0;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 195.0;
+		LEVEL 0 FOR 195.0;
+		LEVEL 1 FOR 65.0;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 195.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 90.0;
 	}
 }
 
@@ -260,14 +238,18 @@ TRANSITION_LIST("bus2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 25.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
 	}
 }
 
@@ -276,14 +258,14 @@ TRANSITION_LIST("bus3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 150.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 25.0;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 195.0;
+		LEVEL 0 FOR 195.0;
+		LEVEL 1 FOR 65.0;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 195.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 90.0;
 	}
 }
 
@@ -292,17 +274,18 @@ TRANSITION_LIST("bus4")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
 	}
 }
 
@@ -311,17 +294,14 @@ TRANSITION_LIST("bus5")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 195.0;
+		LEVEL 0 FOR 195.0;
+		LEVEL 1 FOR 65.0;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 195.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 90.0;
 	}
 }
 
@@ -330,17 +310,18 @@ TRANSITION_LIST("bus6")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
 		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
 	}
 }
 
@@ -349,17 +330,14 @@ TRANSITION_LIST("bus7")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 225.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 75.0;
-		LEVEL 0 FOR 75.0;
-		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 195.0;
+		LEVEL 0 FOR 195.0;
+		LEVEL 1 FOR 65.0;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 195.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 90.0;
 	}
 }
 
@@ -377,20 +355,51 @@ TRANSITION_LIST("CLOCK")
 	}
 }
 
+TRANSITION_LIST("IR_IN")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 50.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 400.0;
+		LEVEL 0 FOR 100.0;
+		LEVEL 1 FOR 100.0;
+		LEVEL 0 FOR 100.0;
+	}
+}
+
+TRANSITION_LIST("IR_OUT")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 195.0;
+		LEVEL 0 FOR 195.0;
+		LEVEL 1 FOR 130.0;
+		LEVEL 0 FOR 130.0;
+		LEVEL 1 FOR 65.0;
+		LEVEL 0 FOR 65.0;
+		LEVEL 1 FOR 130.0;
+		LEVEL 0 FOR 25.0;
+	}
+}
+
 TRANSITION_LIST("RESET")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 380.0;
-		LEVEL 1 FOR 300.0;
-		LEVEL 0 FOR 320.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "BR_IN";
+	CHANNEL = "bus0";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -399,7 +408,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "BR_OUT";
+	CHANNEL = "bus1";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -408,7 +417,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bus0";
+	CHANNEL = "bus2";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -417,7 +426,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bus1";
+	CHANNEL = "bus3";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -426,7 +435,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bus2";
+	CHANNEL = "bus4";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -435,7 +444,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bus3";
+	CHANNEL = "bus5";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -444,7 +453,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bus4";
+	CHANNEL = "bus6";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -453,7 +462,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bus5";
+	CHANNEL = "bus7";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;
@@ -462,7 +471,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bus6";
+	CHANNEL = "CLOCK";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 8;
@@ -471,7 +480,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "bus7";
+	CHANNEL = "IR_IN";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
@@ -480,7 +489,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "CLOCK";
+	CHANNEL = "IR_OUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 10;

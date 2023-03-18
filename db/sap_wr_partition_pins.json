@@ -4,59 +4,51 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Y0",
+					"name" : "bus0",
 					"strict" : false
 				},
 				{
-					"name" : "Y1",
+					"name" : "bus1",
 					"strict" : false
 				},
 				{
-					"name" : "Y2",
+					"name" : "bus2",
 					"strict" : false
 				},
 				{
-					"name" : "Y3",
+					"name" : "bus3",
 					"strict" : false
 				},
 				{
-					"name" : "Y4",
+					"name" : "bus4",
 					"strict" : false
 				},
 				{
-					"name" : "Y5",
+					"name" : "bus5",
 					"strict" : false
 				},
 				{
-					"name" : "Y6",
+					"name" : "bus6",
 					"strict" : false
 				},
 				{
-					"name" : "Y7",
+					"name" : "bus7",
 					"strict" : false
 				},
 				{
-					"name" : "G1",
+					"name" : "IR_OUT",
 					"strict" : false
 				},
 				{
-					"name" : "A",
+					"name" : "CLOCK",
 					"strict" : false
 				},
 				{
-					"name" : "G2A",
+					"name" : "RESET",
 					"strict" : false
 				},
 				{
-					"name" : "G2B",
-					"strict" : false
-				},
-				{
-					"name" : "B",
-					"strict" : false
-				},
-				{
-					"name" : "C",
+					"name" : "IR_IN",
 					"strict" : false
 				}
 			]
