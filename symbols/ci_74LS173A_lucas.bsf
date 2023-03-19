@@ -1,0 +1,128 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 160 320)
+	(text "ci_74LS173A" (rect 5 0 80 15)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 207 26 220)(font "Intel Clear" ))
+	(port
+		(pt 96 32)
+		(input)
+		(text "D0" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
+		(text "D0" (rect 55 24 71 39)(font "Intel Clear" (font_size 8)))
+		(line (pt 80 32)(pt 96 32))
+	)
+	(port
+		(pt 96 48)
+		(input)
+		(text "D1" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
+		(text "D1" (rect 55 40 71 55)(font "Intel Clear" (font_size 8)))
+		(line (pt 80 48)(pt 96 48))
+	)
+	(port
+		(pt 96 64)
+		(input)
+		(text "D2" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
+		(text "D2" (rect 55 56 71 71)(font "Intel Clear" (font_size 8)))
+		(line (pt 80 64)(pt 96 64))
+	)
+	(port
+		(pt 96 80)
+		(input)
+		(text "D3" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
+		(text "D3" (rect 55 72 71 87)(font "Intel Clear" (font_size 8)))
+		(line (pt 80 80)(pt 96 80))
+	)
+	(port
+		(pt 96 184)
+		(input)
+		(text "IE1" (rect 0 0 18 15)(font "Intel Clear" (font_size 8)))
+		(text "IE1" (rect 53 176 71 191)(font "Intel Clear" (font_size 8)))
+		(line (pt 80 184)(pt 96 184))
+	)
+	(port
+		(pt 96 200)
+		(input)
+		(text "IE2" (rect 0 0 18 15)(font "Intel Clear" (font_size 8)))
+		(text "IE2" (rect 53 192 71 207)(font "Intel Clear" (font_size 8)))
+		(line (pt 80 200)(pt 96 200))
+	)
+	(port
+		(pt 96 136)
+		(input)
+		(text "clock" (rect 0 0 30 15)(font "Intel Clear" (font_size 8)))
+		(text "clock" (rect 41 128 71 143)(font "Intel Clear" (font_size 8)))
+		(line (pt 80 136)(pt 96 136))
+	)
+	(port
+		(pt 96 216)
+		(input)
+		(text "clear" (rect 0 0 28 15)(font "Intel Clear" (font_size 8)))
+		(text "clear" (rect 43 208 71 223)(font "Intel Clear" (font_size 8)))
+		(line (pt 80 216)(pt 96 216))
+	)
+	(port
+		(pt 96 152)
+		(input)
+		(text "OE1" (rect 0 0 24 15)(font "Intel Clear" (font_size 8)))
+		(text "OE1" (rect 47 144 71 159)(font "Intel Clear" (font_size 8)))
+		(line (pt 80 152)(pt 96 152))
+	)
+	(port
+		(pt 96 168)
+		(input)
+		(text "OE2" (rect 0 0 24 15)(font "Intel Clear" (font_size 8)))
+		(text "OE2" (rect 47 160 71 175)(font "Intel Clear" (font_size 8)))
+		(line (pt 80 168)(pt 96 168))
+	)
+	(port
+		(pt 0 32)
+		(output)
+		(text "Q0" (rect 0 0 17 15)(font "Intel Clear" (font_size 8)))
+		(text "Q0" (rect 24 24 41 39)(font "Intel Clear" (font_size 8)))
+		(line (pt 16 32)(pt 0 32))
+	)
+	(port
+		(pt 0 48)
+		(output)
+		(text "Q1" (rect 0 0 17 15)(font "Intel Clear" (font_size 8)))
+		(text "Q1" (rect 24 40 41 55)(font "Intel Clear" (font_size 8)))
+		(line (pt 16 48)(pt 0 48))
+	)
+	(port
+		(pt 0 64)
+		(output)
+		(text "Q2" (rect 0 0 17 15)(font "Intel Clear" (font_size 8)))
+		(text "Q2" (rect 24 56 41 71)(font "Intel Clear" (font_size 8)))
+		(line (pt 16 64)(pt 0 64))
+	)
+	(port
+		(pt 0 80)
+		(output)
+		(text "Q3" (rect 0 0 17 15)(font "Intel Clear" (font_size 8)))
+		(text "Q3" (rect 24 72 41 87)(font "Intel Clear" (font_size 8)))
+		(line (pt 16 80)(pt 0 80))
+	)
+	(drawing
+		(rectangle (rect 16 16 80 232))
+	)
+)

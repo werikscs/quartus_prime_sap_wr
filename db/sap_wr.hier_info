@@ -1,67 +1,19 @@
-|output_register
-out_b7 <= ci_74LS173A:inst74ls.Q0
-bus7 => ci_74LS173A:inst74ls.D0
-bus6 => ci_74LS173A:inst74ls.D1
-bus5 => ci_74LS173A:inst74ls.D2
-bus4 => ci_74LS173A:inst74ls.D3
-OPR_IN => ci_74LS173A:inst74ls.IE1
-OPR_IN => ci_74LS173A:inst74ls.IE2
-OPR_IN => ci_74LS173A:inst1.IE1
-OPR_IN => ci_74LS173A:inst1.IE2
-CLOCK => ci_74LS173A:inst74ls.clock
-CLOCK => ci_74LS173A:inst1.clock
-RESET => ci_74LS173A:inst74ls.clear
-RESET => ci_74LS173A:inst1.clear
-out_b6 <= ci_74LS173A:inst74ls.Q1
-out_b5 <= ci_74LS173A:inst74ls.Q2
-out_b4 <= ci_74LS173A:inst74ls.Q3
-out_b3 <= ci_74LS173A:inst1.Q0
-bus3 => ci_74LS173A:inst1.D0
-bus2 => ci_74LS173A:inst1.D1
-bus1 => ci_74LS173A:inst1.D2
-bus0 => ci_74LS173A:inst1.D3
-out_b2 <= ci_74LS173A:inst1.Q1
-out_b1 <= ci_74LS173A:inst1.Q2
-out_b0 <= ci_74LS173A:inst1.Q3
-
-
-|output_register|ci_74LS173A:inst74ls
-Q0 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-clear => inst31.IN0
-clock => inst5.CLK
-clock => inst9.CLK
-clock => inst18.CLK
-clock => inst25.CLK
-IE1 => inst.IN0
-IE2 => inst.IN1
-D0 => inst1.IN1
-OE1 => inst30.IN0
-OE2 => inst30.IN1
-Q1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-D1 => inst4.IN1
-Q2 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
-D2 => inst15.IN1
-Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
-D3 => inst22.IN1
-
-
-|output_register|ci_74LS173A:inst1
-Q0 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
-clear => inst31.IN0
-clock => inst5.CLK
-clock => inst9.CLK
-clock => inst18.CLK
-clock => inst25.CLK
-IE1 => inst.IN0
-IE2 => inst.IN1
-D0 => inst1.IN1
-OE1 => inst30.IN0
-OE2 => inst30.IN1
-Q1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
-D1 => inst4.IN1
-Q2 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
-D2 => inst15.IN1
-Q3 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
-D3 => inst22.IN1
+|ci_74LS157_lucas
+Y1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+E => inst.IN0
+E => inst1.IN0
+S => inst.IN1
+S => inst14.IN0
+A1 => inst6.IN1
+B1 => inst2.IN1
+Y2 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst30.IN1
+B2 => inst29.IN1
+Y3 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst32.IN1
+B3 => inst31.IN1
+Y4 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+A4 => inst34.IN1
+B4 => inst33.IN1
 
 

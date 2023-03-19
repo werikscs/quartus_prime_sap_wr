@@ -4,79 +4,59 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "out_b7",
+					"name" : "Y1",
 					"strict" : false
 				},
 				{
-					"name" : "out_b6",
+					"name" : "Y2",
 					"strict" : false
 				},
 				{
-					"name" : "out_b5",
+					"name" : "Y3",
 					"strict" : false
 				},
 				{
-					"name" : "out_b4",
+					"name" : "Y4",
 					"strict" : false
 				},
 				{
-					"name" : "out_b3",
+					"name" : "B1",
 					"strict" : false
 				},
 				{
-					"name" : "out_b2",
+					"name" : "A1",
 					"strict" : false
 				},
 				{
-					"name" : "out_b1",
+					"name" : "S",
 					"strict" : false
 				},
 				{
-					"name" : "out_b0",
+					"name" : "E",
 					"strict" : false
 				},
 				{
-					"name" : "bus7",
+					"name" : "B2",
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK",
+					"name" : "A2",
 					"strict" : false
 				},
 				{
-					"name" : "RESET",
+					"name" : "B3",
 					"strict" : false
 				},
 				{
-					"name" : "OPR_IN",
+					"name" : "A3",
 					"strict" : false
 				},
 				{
-					"name" : "bus6",
+					"name" : "B4",
 					"strict" : false
 				},
 				{
-					"name" : "bus5",
-					"strict" : false
-				},
-				{
-					"name" : "bus4",
-					"strict" : false
-				},
-				{
-					"name" : "bus3",
-					"strict" : false
-				},
-				{
-					"name" : "bus2",
-					"strict" : false
-				},
-				{
-					"name" : "bus1",
-					"strict" : false
-				},
-				{
-					"name" : "bus0",
+					"name" : "A4",
 					"strict" : false
 				}
 			]
